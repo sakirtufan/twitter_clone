@@ -1,55 +1,55 @@
 import React from "react";
-import NavButton from "./navigation-button"
+import NavigationButton from "./navigation-button"
 import TitleBold from "./title-bold"
 import {Bookmark, Explore, Home, Lists, Messages, More, Notification, Profile, Twitter} from "./icons"
 import styles from "./navigation.module.css";
 
-function Navigation() {
+function Navigation({ selectedKey }) {
   return (
     <nav className={styles.nav}>
-      <NavButton>
+      <NavigationButton>
         <Twitter/>
-      </NavButton>
+      </NavigationButton>
 
-      <NavButton>
+      <NavigationButton selected={selectedKey === "home"}>
         <Home />
         <TitleBold>Startseite</TitleBold>
-      </NavButton>
+      </NavigationButton>
 
-      <NavButton>
+      <NavigationButton selected={selectedKey === "explore"} >
         <Explore />
         <TitleBold>Entdecken</TitleBold>
-      </NavButton>
+      </NavigationButton>
 
-      <NavButton>
+      <NavigationButton notify={17} selected={selectedKey === "notification"}>
         <Notification />
         <TitleBold>Mitteilungen</TitleBold>
-      </NavButton>
+      </NavigationButton>
 
-      <NavButton>
+      <NavigationButton selected={selectedKey === "messages"}>
         <Messages />
         <TitleBold>Nachrichten</TitleBold>
-      </NavButton>
+      </NavigationButton>
 
-      <NavButton>
+      <NavigationButton selected={selectedKey === "bookmark"}>
         <Bookmark />
         <TitleBold>Lesezeichen</TitleBold>
-      </NavButton>
+      </NavigationButton>
 
-      <NavButton>
+      <NavigationButton selected={selectedKey === "lists"}>
         <Lists />
         <TitleBold>Listen</TitleBold>
-      </NavButton>
+      </NavigationButton>
 
-      <NavButton>
+      <NavigationButton selected={selectedKey === "profile"}>
         <Profile />
         <TitleBold>Profil</TitleBold>
-      </NavButton>
+      </NavigationButton>
 
-      <NavButton>
+      <NavigationButton selected={selectedKey === "more"}>
         <More />
         <TitleBold>Mehr</TitleBold>
-      </NavButton>
+      </NavigationButton>
     </nav>
   );
 }
