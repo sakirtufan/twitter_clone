@@ -4,9 +4,9 @@ import styles from "./navigation-button.module.css";
 
 function NavigationButton({ children }) {
   return (
-    <button className={styles.navButton}>
+    <Button className={styles.navButton}>
       {children}
-    </button>
+    </Button>
   );
 }
 

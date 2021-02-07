@@ -1,5 +1,6 @@
 import React from "react";
 import NavButton from "./navigation-button"
+import TitleBold from "./title-bold"
 import {Bookmark, Explore, Home, Lists, Messages, More, Notification, Profile, Twitter} from "./icons"
 import styles from "./navigation.module.css";
 
@@ -12,42 +13,42 @@ function Navigation() {
 
       <NavButton>
         <Home />
-        <span>Startseite</span>
+        <TitleBold>Startseite</TitleBold>
       </NavButton>
 
       <NavButton>
         <Explore />
-        <span>Entdecken</span>
+        <TitleBold>Entdecken</TitleBold>
       </NavButton>
 
       <NavButton>
         <Notification />
-        <span>Mitteilungen</span>
+        <TitleBold>Mitteilungen</TitleBold>
       </NavButton>
 
       <NavButton>
         <Messages />
-        <span>Nachrichten</span>
+        <TitleBold>Nachrichten</TitleBold>
       </NavButton>
 
       <NavButton>
         <Bookmark />
-        <span>Lesezeichen</span>
+        <TitleBold>Lesezeichen</TitleBold>
       </NavButton>
 
       <NavButton>
         <Lists />
-        <span>Listen</span>
+        <TitleBold>Listen</TitleBold>
       </NavButton>
 
       <NavButton>
         <Profile />
-        <span>Profil</span>
+        <TitleBold>Profil</TitleBold>
       </NavButton>
 
       <NavButton>
         <More />
-        <span>Mehr</span>
+        <TitleBold>Mehr</TitleBold>
       </NavButton>
     </nav>
   );
