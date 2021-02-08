@@ -5,10 +5,15 @@
   border-radius: 99px;
   display: flex;
   align-items: center;
+  justify-content: center;
   transition: var(--fade);
 
   &:hover {
     background-color: var(--c-theme-op-20);
     color: var(--c-theme);
   }
+}
+
+.fullWidth {
+  width: 100% !important;
 }
