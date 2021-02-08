@@ -3,6 +3,7 @@ import React from 'react';
 import Button from '../components/button';
 import * as Icons from '../components/icons'
 import Photo from '../components/photo';
+import ProfileBox from '../components/profile-box';
 
 export default {
   title: 'Icons',
@@ -41,8 +42,10 @@ export const Icon = () => (
   </div>
 )
 
-
-
 export const ProfilePhoto = () => (
-  <Photo src="https://pbs.twimg.com/profile_images/1301602827563937795/F1cWHNzt_400x400.jpg"></Photo>
+  <Photo />
+)
+
+export const Box = () => (
+  <ProfileBox />
 )
