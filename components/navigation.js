@@ -1,6 +1,6 @@
 import React from "react";
 import NavigationButton from "./navigation-button"
-import TitleBold from "./title-bold"
+import TextTitle from "./text-title"
 import {Bookmark, Explore, Home, Lists, Messages, More, Notification, Profile, Twitter} from "./icons"
 import styles from "./navigation.module.css";
 
@@ -13,42 +13,42 @@ function Navigation({ selectedKey }) {
 
       <NavigationButton selected={selectedKey === "home"}>
         <Home />
-        <TitleBold>Startseite</TitleBold>
+        <TextTitle>Startseite</TextTitle>
       </NavigationButton>
 
       <NavigationButton selected={selectedKey === "explore"} >
         <Explore />
-        <TitleBold>Entdecken</TitleBold>
+        <TextTitle>Entdecken</TextTitle>
       </NavigationButton>
 
       <NavigationButton notify={17} selected={selectedKey === "notification"}>
         <Notification />
-        <TitleBold>Mitteilungen</TitleBold>
+        <TextTitle>Mitteilungen</TextTitle>
       </NavigationButton>
 
       <NavigationButton selected={selectedKey === "messages"}>
         <Messages />
-        <TitleBold>Nachrichten</TitleBold>
+        <TextTitle>Nachrichten</TextTitle>
       </NavigationButton>
 
       <NavigationButton selected={selectedKey === "bookmark"}>
         <Bookmark />
-        <TitleBold>Lesezeichen</TitleBold>
+        <TextTitle>Lesezeichen</TextTitle>
       </NavigationButton>
 
       <NavigationButton selected={selectedKey === "lists"}>
         <Lists />
-        <TitleBold>Listen</TitleBold>
+        <TextTitle>Listen</TextTitle>
       </NavigationButton>
 
       <NavigationButton selected={selectedKey === "profile"}>
         <Profile />
-        <TitleBold>Profil</TitleBold>
+        <TextTitle>Profil</TextTitle>
       </NavigationButton>
 
       <NavigationButton selected={selectedKey === "more"}>
         <More />
-        <TitleBold>Mehr</TitleBold>
+        <TextTitle>Mehr</TextTitle>
       </NavigationButton>
     </nav>
   );
