@@ -1,13 +1,16 @@
-import React from "react"
-import cn from "classnames"
-import styles from "./photo.module.css"
+import React from "react";
+import cn from "classnames";
+import styles from "./photo.module.css";
 
-function Photo({ src, alt }) {
+function Photo({
+  src = "https://pbs.twimg.com/profile_images/1301602827563937795/F1cWHNzt_400x400.jpg",
+  alt,
+}) {
   return (
-    <div  className={cn([styles.photo])}>
+    <div className={cn([styles.photo])}>
       <img className={styles.img} src={src} alt={alt} />
     </div>
-  )
+  );
 }
 
 export default Photo;
