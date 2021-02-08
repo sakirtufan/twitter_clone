@@ -1,3 +1,7 @@
+body{
+  padding: 30px;
+}
+
 .icons {
   color: #fff;
   display: grid;
