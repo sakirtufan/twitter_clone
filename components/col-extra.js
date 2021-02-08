@@ -1,13 +1,10 @@
 import React from 'react'
-import cn from "classnames"
-import styles from "./col-extra.module.css"
+import cn from 'classnames'
 
-const Extra = ({ children }) => {
-  return (
-    <div className={cn(styles.layout)}>
-      {children}
-    </div>
-  )
+import styles from './col-extra.module.css'
+
+function Sidebar({ children }) {
+  return <div className={cn(styles.extra)}>{children}</div>
 }
 
-export default Extra
+export default Sidebar

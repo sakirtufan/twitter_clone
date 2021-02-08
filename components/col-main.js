@@ -1,13 +1,10 @@
 import React from 'react'
-import cn from "classnames"
-import styles from "./col-main.module.css"
+import cn from 'classnames'
 
-const Main = ({ children }) => {
-  return (
-    <div className={cn(styles.layout)}>
-      {children}
-    </div>
-  )
+import styles from './col-main.module.css'
+
+function Layout({ children }) {
+  return <div className={cn(styles.main)}>{children}</div>
 }
 
-export default Main
+export default Layout
