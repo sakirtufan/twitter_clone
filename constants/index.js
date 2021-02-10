@@ -8,13 +8,15 @@ export default {
 export const MENU = [
   {
     key: 'twitter',
-    icon: <Icon.Twitter />,
-    iconSelected: <Icon.Twitter />,
+    path: '/',    
+    icon: <Icon.Twitter style={{fontSize:30, color:'white'}}/>,
+    iconSelected: <Icon.Twitter style={{fontSize:30, color:'white'}}/>,
     title: '',
     notify: 0
   },
   {
     key: 'home',
+    path: '/',  
     icon: <Icon.Home />,
     iconSelected: <Icon.HomeFill />,
     title: 'Startseite',
@@ -22,13 +24,15 @@ export const MENU = [
   },
   {
     key: 'explore',
+    path: '/explore',  
     icon: <Icon.Explore />,
     iconSelected: <Icon.ExplorerFill />,
     title: 'Entdecken',
     notify: 0
   },
   {
-    key: 'notification',
+    key: 'notifications',
+    path: '/notifications',  
     icon: <Icon.Notification />,
     iconSelected: <Icon.NotificationFill />,
     title: 'Mitteilungen',
@@ -36,13 +40,15 @@ export const MENU = [
   },
   {
     key: 'messages',
+    path: '/messages',  
     icon: <Icon.Messages />,
     iconSelected: <Icon.MessagesFill />,
     title: 'Nachrichten',
     notify: 0
   },
   {
-    key: 'bookmark',
+    key: 'bookmarks',
+    path: '/bookmarks',  
     icon: <Icon.Bookmark />,
     iconSelected: <Icon.BookmarkFill />,
     title: 'Lesezeichen',
@@ -50,6 +56,7 @@ export const MENU = [
   },
   {
     key: 'lists',
+    path: '/lists',  
     icon: <Icon.Lists />,
     iconSelected: <Icon.ListsFill />,
     title: 'Listen',
@@ -57,6 +64,7 @@ export const MENU = [
   },
   {
     key: 'profile',
+    path: '/profile',  
     icon: <Icon.Profile />,
     iconSelected: <Icon.ProfileFill />,
     title: 'Profil',
@@ -64,6 +72,7 @@ export const MENU = [
   },
   {
     key: 'more',
+    path: '/more',  
     icon: <Icon.More />,
     iconSelected: <Icon.More />,
     title: 'Mehr',
