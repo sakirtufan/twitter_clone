@@ -10,6 +10,13 @@
       margin-left: 20px;
       margin-right: 15px;
     }
+      &:global(.twitter) {
+    color: var(--c-theme);
+
+    :global(html:not(.light)) & {
+      color: white;
+    }
+  }
   }
 }
 

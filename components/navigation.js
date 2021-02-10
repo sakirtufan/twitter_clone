@@ -4,6 +4,7 @@ import NavigationButton from "./navigation-button";
 import TextTitle from "./text-title";
 import styles from "./navigation.module.css";
 import { MENU } from "../constants";
+import cn from 'classnames'
 
 function Navigation({ flat = false }) {
   const router = useRouter();
@@ -19,7 +20,7 @@ function Navigation({ flat = false }) {
             notify={menu.notify}
             selected={selected}
             href={menu.path}
-            classnames={styles.navButton}
+            classnames={cn(styles.navButton, menu.key)}
           >
             {selected ? menu.iconSelected : menu.icon}
             {showTitle && <TextTitle>{menu.title}</TextTitle>}
