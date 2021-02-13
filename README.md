@@ -4,6 +4,10 @@ Dieses Projekt befindet sich noch in der Entwicklung - PRs, Beiträge und Proble
 ## Link
 * [Webseite](https://twitter-web-clone.sakirtufan.vercel.app/)
 
+## Anwendungsstruktur
+Klicken Sie auf der Startseite auf die Taste Mehr, um das Thema auszuwählen. Es gibt 3 verschiedene Themeneinstellungen
+
+
 ## Tools
 * [React](https://reactjs.org/)
 * [Next](https://nextjs.org/)
